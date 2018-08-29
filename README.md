@@ -34,8 +34,17 @@ ng g i [interfaceName]
  // path: '/services/in-memory-database/'
  ```
 
-(6) Create services for Dao objects.
-```
+(6) Create services for Dao objects for in memory database.
+```TypeScript
+export interface Authenticate {
+  username: string;
+  password: string;
+}
+
+export interface UserBase {
+  email: string;
+  name: string;
+}
 ```
 
 (7) NgRx Authentication
@@ -66,3 +75,4 @@ ng g i [interfaceName]
     - Login State
       - Pending -> Error
   - Effects
+

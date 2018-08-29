@@ -1,4 +1,7 @@
 
-<app-login></app-login>
+
+<div class="wrapper" *ngIf="loading">
+  <mat-spinner class="page-loader"></mat-spinner>
+</div>
 
 <router-outlet></router-outlet>

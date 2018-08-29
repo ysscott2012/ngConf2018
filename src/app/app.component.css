@@ -1,0 +1,21 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 0;
+  grid-auto-rows: 50vh;
+  grid-template-areas: ". a a ." ". a a .";
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.page-loader {
+  grid-area: a;
+  align-self: center;
+  justify-self: center;
+}
+
+
